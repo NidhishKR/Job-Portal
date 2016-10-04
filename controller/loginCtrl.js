@@ -1,12 +1,9 @@
-var express = require('express');
-var router = express.Router();
 var mongoose = require('mongoose');
 var md5 = require("md5");
-var model = require('../model/signUpModel')
+var loginModel = require('../model');
+var express = require('express');
 
-function login(req, res) {
-  model.signUpModel(req, res);
+function loginUser(req, res) {
+  loginModel.loginModelIndex.check(req, res);
 }
-module.exports = {
-  login: login
-};
+module.exports = loginUser;
