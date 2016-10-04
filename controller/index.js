@@ -4,7 +4,7 @@ var loginAdminCtrlIndex = require('./loginAdminCtrl');
 var jobUploadIndex = require('./jobUploadCtrl');
 var newUpdateCtrlIndex = require('./newUpdateCtrl');
 var homeCtrlIndex = require ('./homeCtrl');
-var uploadCtrlIndex = require ('./uploadCtrl');
+//var uploadCtrlIndex = require ('./uploadCtrl');
 var controllerOutput = {
   signUpCtrlIndex: signUpCtrlIndex,
   loginCtrlIndex: loginCtrlIndex,
@@ -12,6 +12,6 @@ var controllerOutput = {
   jobUploadIndex : jobUploadIndex,
   newUpdateCtrlIndex : newUpdateCtrlIndex,
   homeCtrlIndex : homeCtrlIndex,
-  uploadCtrlIndex : uploadCtrlIndex
+//  uploadCtrlIndex : uploadCtrlIndex
 }
 module.exports = controllerOutput;

@@ -18,5 +18,5 @@ router.post('/admin', loginAdminCtrl.loginAdminCtrlIndex);
 router.post('/jobUpload', jobUploadCtrl.jobUploadIndex);
 router.get('/newUpdate', newUpdateCtrl.newUpdateCtrlIndex);
 router.post('/', homeCtrl.homeCtrlIndex);
-router.post('/upload', uploadCtrl.uploadCtrlIndex);
+//router.post('/upload', uploadCtrl.uploadCtrlIndex);
 module.exports = router;

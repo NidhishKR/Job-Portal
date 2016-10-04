@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         next();
     });
-// view engine setup
+//view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(favicon());
@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 mongoose.connect('mongodb://localhost/JobPortalMyapp');
-var storage = multer.diskStorage({ 
+var storage = multer.diskStorage({
         destination: function (req, file, cb) {
             cb(null, 'public/upload')
         },filename: function (req, file, cb) {
@@ -39,7 +39,7 @@ var storage = multer.diskStorage({
     });
     var upload = multer({
                 storage: storage
-            }).single('file');
+            }).single(file);
             app.post('/upload', function(req, res) {
         upload(req,res,function(err){
             if(err){
@@ -55,7 +55,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-/// error handlers
+// / error handlers
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {

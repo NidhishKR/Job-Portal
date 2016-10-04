@@ -4,7 +4,7 @@ var loginAdminModelIndex = require('./loginAdminModel');
 var jobUploadModelIndex = require('./jobUploadModel');
 var newUpdateModelIndex = require('./newUpdateModel');
 var homeModelIndex = require('./homeModel');
-var uploadModelIndex = require('./uploadModel');
+//var uploadModelIndex = require('./uploadModel');
 modelOutput = {
   signUpModelIndex: signUpModelIndex,
   loginModelIndex: loginModelIndex,
@@ -12,6 +12,6 @@ modelOutput = {
   jobUploadModelIndex : jobUploadModelIndex,
   newUpdateModelIndex : newUpdateModelIndex,
   homeModelIndex : homeModelIndex,
-  uploadModelIndex : uploadModelIndex
+  //uploadModelIndex : uploadModelIndex
 }
 module.exports = modelOutput;

@@ -2,53 +2,52 @@
 <html>
 
 <head>
-
   <title>JoB</title>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-  
-  <script type="text/javascript" src="ui.js">
-
+  <script type="text/javascript"
+    src="ui.js">
   </script>
-
-  <script type="text/javascript" src="javascripts/jobportal.js"></script>
-
-  <link rel="stylesheet" href="stylesheets/style.css" media="screen" title="no title" charset="utf-8">
-</head>
+  <script type="text/javascript"
+    src="javascripts/jobportal.js"></script>
+  <link rel="stylesheet" href="stylesheets/style.css"
+    media="screen" title="no title" charset="utf-8"> </head>
 
 <body ng-app="jobportal">
   <div class=" ">
-
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle"
+            data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-          <a class="navbar-brand," href="#/"> <img src="images/i2.png" alt="" /></a>
+          <a class="navbar-brand,"
+            href="#/"> <img src="images/i2.png" alt=""
+            /></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse"
+          id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#/">Job</a>
+            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown"
+                href="#/">Job</a>
               <ul class="dropdown-menu">
                 <li><a href="#newUpdate">Advanced Job Search</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#resume">Resume<span class="caret"></span></a>
+            <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown"
+                href="#resume">Resume<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#upload">Upload</a></li>
-                <li><a href="http://localhost:8004/html/resume/resume1.html#/" target="_blank">Create resume</a></li>
+                <li><a href="http://localhost:8004/html/resume/resume1.html#/"
+                    target="_blank">Create resume</a></li>
                 <li><a href="#debug">Debug</a></li>
                 <li><a href="#myResume">view myReume</a></li>
               </ul>
@@ -63,11 +62,8 @@
         </div>
       </div>
     </nav>
-
   </div>
-  <div ng-view>  </div>
-
-
+  <div ng-view> </div>
 </body>
 
 </html>
